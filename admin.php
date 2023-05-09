@@ -191,7 +191,7 @@ if (empty($_SERVER['PHP_AUTH_USER']) ||
   $pwdread =  $getPWD->fetch(PDO::FETCH_ASSOC);
   if(empty($pwdread) || !password_verify($_SERVER['PHP_AUTH_PW'], $pwdread['pass_hash'])){
     header('HTTP/1.1 401 Unanthorized');
-    header('WWW-Authenticate: Basic realm="http://u47755.kubsu-dev.ru/app6/admin.php"');
+    header('WWW-Authenticate: Basic realm="http://u47755.kubsu-dev.ru/app6.1/admin.php"');
     print('<h1>401 Требуется авторизация</h1>');
     exit();
   }
@@ -425,7 +425,7 @@ if (empty($_SERVER['PHP_AUTH_USER']) ||
   $pwdread =  $getPWD->fetch(PDO::FETCH_ASSOC);
   if(empty($pwdread) || !password_verify($_SERVER['PHP_AUTH_PW'], $pwdread['pass_hash'])){
     header('HTTP/1.1 401 Unanthorized');
-    header('WWW-Authenticate: Basic realm="http://u47755.kubsu-dev.ru/app6/admin.php"');
+    header('WWW-Authenticate: Basic realm="http://u47755.kubsu-dev.ru/app6.1/admin.php"');
     print('<h1>401 Требуется авторизация</h1>');
     exit();
   }
