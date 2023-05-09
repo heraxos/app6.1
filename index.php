@@ -1,8 +1,8 @@
 <?php
 include('lib.php');
 header('Content-Type: text/html; charset=UTF-8');
-$user = 'u47551';
-$pass = '4166807';
+$user = 'u47755';
+$pass = '2914865';
 function validateArray($arr){
 	foreach($arr as $checking){
 		if ($checking === 1) return false;
