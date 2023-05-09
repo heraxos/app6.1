@@ -6,7 +6,7 @@ function connectToDB($user,$pass){
 function connectDB(){
     $user = 'u47755';
     $pass = '2914865';
-    $db = new PDO('mysql:host=localhost;dbname=u47551', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
+    $db = new PDO('mysql:host=localhost;dbname=u47755', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
     return $db;
 }
 ?>
